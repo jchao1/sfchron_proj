@@ -1,0 +1,6 @@
+# python bytecode
+*.pyc
+
+# emacs backups
+# emacs > vim
+*~
