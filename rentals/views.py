@@ -4,3 +4,8 @@ from django.http import HttpResponse
 def index(request):
     #return HttpResponse("Ayyyyy")
 	return render(request, 'rentals/templates/rentals/index.html', {})
+
+
+def listings(request):
+    #return HttpResponse("Ayyyyy")
+	return render(request, 'rentals/templates/rentals/listings.html', {})
