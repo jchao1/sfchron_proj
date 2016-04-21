@@ -33,16 +33,12 @@
 			<h1>FEATURED LISTINGS</h1>
 		</section>
 
-		<section class="listing">
-			<div class="listing-left">
-				<img src="{%  static 'assets/house.jpg' %}">
-			</div>
-			<div class="listing-right">
-				asdf
-			</div>
-		</section>
-
-
+		{% for listing in listings %}
+		<div class="listing">
+		  <p>{{ listing.address }}</p>
+		  <p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
+		</div>
+		{% endfor %}
 
 	</div>
 
