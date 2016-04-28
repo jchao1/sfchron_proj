@@ -1,26 +1,95 @@
 [
-    {
-	"listing_id": 1,
-	"address": "301 28th Street",
-	"city": "San Francisco",
-	"state": "CA",
-	"zip": 94105,
-	"num_beds": 1,
-	"num_baths": 1,
-	"price": 4100,
-	"image_urls": [
-	    "http://d1myakww8w9xev.cloudfront.net/5d505e3482e25795/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNi5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895",
-	    "http://d1myakww8w9xev.cloudfront.net/e4be13d0dc4743cc/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNy5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895"
-	]
-    },
     {	
-	"listing_id": 2,
-	"address": "100 Parker Avenue",
+	"listing_id": 1,
+	"address": "400 Wildstone Circle",
 	"city": "San Francisco",
 	"state": "CA",
 	"zip": 94118,
+	"neighborhood": "Ingleside",
+	"sqft": 780,
 	"num_beds": 1,
 	"num_baths": 1,
-	"price": 3500
+	"price": 1800,
+	"type": "apartment",
+	"image_urls": [
+	    "http://d1myakww8w9xev.cloudfront.net/5d505e3482e25795/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNi5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895",
+	    "http://d1myakww8w9xev.cloudfront.net/e4be13d0dc4743cc/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNy5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895"
+	],
+	"accomodations": {
+		"washer_dryer": false,
+		"wifi": true,
+		"deck": false,
+		"parking": false,
+		"fitness_center": false,
+		"pool": false
+	},
+	"contact": {
+		"name": "Johnny Spindle",
+		"phone": "5555849302",
+		"email": "jspin@sfallc.com",
+		"company": "SanFranApts LLC"
+	}
+    },
+    {	
+	"listing_id": 2,
+	"address": "100 Preston Avenue",
+	"city": "San Francisco",
+	"state": "CA",
+	"zip": 94118,
+	"neighborhood": "Richmond",
+	"sqft": 3150,
+	"num_beds": 5,
+	"num_baths": 3,
+	"price": 8300,
+	"type": "condo",
+	"image_urls": [
+	    "http://d1myakww8w9xev.cloudfront.net/5d505e3482e25795/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNi5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895",
+	    "http://d1myakww8w9xev.cloudfront.net/e4be13d0dc4743cc/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNy5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895"
+	],
+	"accomodations": {
+		"washer_dryer": true,
+		"wifi": true,
+		"deck": true,
+		"parking": true,
+		"fitness_center": false,
+		"pool": false
+	},
+	"contact": {
+		"name": "Eric Anderson",
+		"phone": "5559280185",
+		"email": "eric@bigsf.com",
+		"company": "Big SF Co"
+	}
+    }
+    {	
+	"listing_id": 3,
+	"address": "936 Wayne Street",
+	"city": "San Francisco",
+	"state": "CA",
+	"zip": 94118,
+	"neighborhood": "Presidio",
+	"sqft": 1250,
+	"num_beds": 1,
+	"num_baths": 1,
+	"price": 3500,
+	"type": "apartment",
+	"image_urls": [
+	    "http://d1myakww8w9xev.cloudfront.net/5d505e3482e25795/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNi5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895",
+	    "http://d1myakww8w9xev.cloudfront.net/e4be13d0dc4743cc/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNy5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895"
+	],
+	"accomodations": {
+		"washer_dryer": true,
+		"wifi": true,
+		"deck": false,
+		"parking": true,
+		"fitness_center": true,
+		"pool": false
+	},
+	"contact": {
+		"name": "Larry Smith",
+		"phone": "5558920483",
+		"email": "larsmith@sfallc.com",
+		"company": "SanFranApts LLC"
+	}
     }
 ]
