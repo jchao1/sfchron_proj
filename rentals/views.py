@@ -16,3 +16,7 @@ def index(request):
 
 def listings_view(request):
 	return render(request, 'rentals/templates/rentals/listings.html', {'listings': listings })
+
+def property_view(request, id):
+	return render(request, 'rentals/templates/rentals/property.html', {'listings': listings, 'listingID': int(id) })
+	
