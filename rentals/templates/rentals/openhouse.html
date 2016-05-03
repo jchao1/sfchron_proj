@@ -15,11 +15,27 @@
 	<div class="container">
 		
 		<section id="top">
-			<h1>OPEN HOUSE</h1>
+			<h1>COMING UP...</h1>
+		</section>
+
+		<section id="date">
+			<h3>Wednesday, May 4th</h3>
 		</section>
 
 		{% for listing in listings %}
-		
+		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
+			<div class="listing row">
+				<div class="small-4 columns">
+					<img src="{{ listing.image_urls.0 }}">
+				</div>
+				<div class="small-8 columns">
+					<p>{{ listing.address }} </p>
+	
+					<p>{{ listing.open_house_start }} - {{ listing.open_house_end }}</p>
+					<p>DESCRIPTION</p>
+				</div>
+			</div>
+		</a>
 		{% endfor %}
 
 	</div>
