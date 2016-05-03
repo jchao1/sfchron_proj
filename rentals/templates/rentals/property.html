@@ -19,11 +19,11 @@
 		{% for listing in listings %}
 		{% if listing.listing_id == listingID %}
 		<div class="row">
-		  <div class="small-8 columns" style="padding: 0">
+		  <div class="small-7 columns" style="padding: 0">
 		  	<img src="{{listing.image_urls.0}}">
 		  </div>
 
-		  <div class="small-4 columns">
+		  <div class="small-5 columns">
 		  	<h3>{{ listing.address}}</h3>
 		  	<h3>${{ listing.price}}/MONTH</h3>
 		  	<h3>{{ listing.contact.name}}</h3>
