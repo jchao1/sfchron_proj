@@ -5,6 +5,10 @@
 	padding: 30px;
 }
 
+.listing p{
+	color: #000000;
+}
+
 .listing .listing-left{
 	height: 100%;
 	display: inline-block;

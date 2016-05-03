@@ -35,8 +35,8 @@
 
 		{% for listing in listings %}
 		<div class="listing">
-		  <p>{{ listing.address }}</p>
-		  <p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
+		  <a href="/rentals/property/{{ listing.listing_id }}/"><p>{{ listing.address }}</p>
+		  <p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p></a>
 		</div>
 		{% endfor %}
 

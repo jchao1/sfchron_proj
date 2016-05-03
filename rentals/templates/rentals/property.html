@@ -28,13 +28,12 @@
 
 
 	<div class="container">
-		
-		<section id="top">
-			<h1>FEATURED LISTINGS</h1>
-		</section>
 
 		{% for listing in listings %}
 		{% if listing.listing_id == listingID %}
+		<section id="top">
+			<h1>{{ listing.address }}</h1>
+		</section>
 		<div class="listing">
 		  <p>{{ listing.address }}</p>
 		  <p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
