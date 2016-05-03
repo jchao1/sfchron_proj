@@ -1,0 +1,17 @@
+<header id="sticky active">
+		{% load static %}
+		<a href="{% url 'index' %}"><img id="logo" src="{% static 'assets/logo.png' %}"></a>
+		<nav class="menu">
+
+			<ul class="active">
+				<li><a href="{% url 'listings' %}">MY LISTINGS</a></li>
+				<li><a href="{% url 'roommates' %}">ROOMMATES</a></li>
+				<li><a href="{% url 'openhouse' %}">OPEN HOUSE</a></li>
+				<li><a href="{% url 'profile' %}">MY PROFILE</a></li>
+			</ul>
+
+
+			<a class="toggle-nav" href="#">&#9776;</a>
+		</nav>
+		
+	</header>

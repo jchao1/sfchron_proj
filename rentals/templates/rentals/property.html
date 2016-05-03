@@ -9,23 +9,7 @@
 
 </head>
 <body>
-	<header id="sticky active">
-		<a href="{% url 'index' %}"><img id="logo" src="{% static 'assets/logo.png' %}"></a>
-		<nav class="menu">
-
-			<ul class="active">
-				<li><a href="{% url 'listings' %}">MY LISTINGS</a></li>
-				<li><a href="#">ROOMMATES</a></li>
-				<li><a href="#">OPEN HOUSE</a></li>
-				<li><a href="{% url 'profile' %}">MY PROFILE</a></li>
-			</ul>
-
-
-			<a class="toggle-nav" href="#">&#9776;</a>
-		</nav>
-		
-	</header>
-
+	{% include "rentals/templates/rentals/nav.html" %}
 
 	<div class="container">
 <!-- 		<section id="top">

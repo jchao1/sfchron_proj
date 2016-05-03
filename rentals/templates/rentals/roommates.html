@@ -5,7 +5,7 @@
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/listings.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/roommates.css' %}">
 
 </head>
 <body>
@@ -15,24 +15,11 @@
 	<div class="container">
 		
 		<section id="top">
-			<h1>FEATURED LISTINGS</h1>
+			<h1>ROOMMATES</h1>
 		</section>
 
 		{% for listing in listings %}
-		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
-			<div class="listing row">
-				<div class="small-4 columns">
-					<img src="{{ listing.image_urls.0 }}">
-				</div>
-				<div class="small-8 columns">
-					<p>{{ listing.address }} </p>
-					<p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
-					<p>{{ listing.num_beds}} Bedroom/{{ listing.num_baths }} Bath</p>
-					<p>{{ listing.sqft }} square feet</p>
-					<p>${{ listing.price }} / month</p>
-				</div>
-			</div>
-		</a>
+		
 		{% endfor %}
 
 	</div>
