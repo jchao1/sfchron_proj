@@ -1,0 +1,113 @@
+[
+    {	
+	"user_id": 1,
+	"name": "Eric Matthews",
+	"profile_img_url": "something",
+	"target_price": [1000, 1500],
+	"target_neighborhood": "Presidio",
+	"target_sqft": [800,1800],
+	"target_num_roommates": 1,
+	"phone": "5550009913",
+	"email": "ericm17@gmail.com",
+	"preferred_contact": "phone",
+	"behavioral": 
+	{
+	    "smoking": false,
+	    "messy": 5,
+	    "early_to_rise": 3,
+	    "share_personal": 1,
+	    "share_general": 5,
+	    "pets": true,
+	    "alcohol": 4,
+	    "stays_in": 1,
+	    "talkative": 3
+	},
+	"roommate_preference":
+	{
+	    "smoking": false,
+	    "messy": 0,
+	    "early_to_rise": 3,
+	    "share_personal": 1,
+	    "share_general": 5,
+	    "pets": true,
+	    "alcohol": 0,
+	    "stays_in": 2,
+	    "talkative": 0
+	},
+	"bio": "I'm an intern with BigNameCompany this year. I enjoy playing video games and generally am very easy to live with. I love pets but don't own any."
+    },
+    {	
+	"user_id": 2,
+	"name": "Andy Porter",
+	"profile_img_url": "something",
+	"target_price": [1000, 2500],
+	"target_neighborhood": "Excelsior",
+	"target_sqft": [3000,3500],
+	"target_num_roommates": 5,
+	"phone": "5551234567",
+	"email": "andrep2@umich.edu",
+	"preferred_contact": "email",
+	"behavioral": 
+	{
+	    "smoking": false,
+	    "messy": 2,
+	    "early_to_rise": 4,
+	    "share_personal": 1,
+	    "share_general": 2,
+	    "pets": false,
+	    "alcohol": 5,
+	    "stays_in": 5,
+	    "talkative": 5
+	},
+	"roommate_preference":
+	{
+	    "smoking": false,
+	    "messy": 0,
+	    "early_to_rise": 0,
+	    "share_personal": 1,
+	    "share_general": 0,
+	    "pets": false,
+	    "alcohol": 5,
+	    "stays_in": 5,
+	    "talkative": 5
+	},
+	"bio": "My name's Andy/Andrew and I love going out on weekends. I'll be working with StartupCompany, and I love the city."
+    },
+    {	
+	"user_id": 3,
+	"name": "Catherine Hopper",
+	"profile_img_url": "something",
+	"target_price": [1300, 2500],
+	"target_neighborhood": "Downtown",
+	"target_sqft": [1500, 2100],
+	"target_num_roommates": 2,
+	"phone": "5555840192",
+	"email": "heli_chopper@gmail.com",
+	"preferred_contact": "phone",
+	"behavioral": 
+	{
+	    "smoking": false,
+	    "messy": 4,
+	    "early_to_rise": 2,
+	    "share_personal": 4,
+	    "share_general": 5,
+	    "pets": true,
+	    "alcohol": 2,
+	    "stays_in": 2,
+	    "talkative": 4
+	},
+	"roommate_preference":
+	{
+	    "smoking": false,
+	    "messy": 4,
+	    "early_to_rise": 0,
+	    "share_personal": 1,
+	    "share_general": 0,
+	    "pets": true,
+	    "alcohol": 0,
+	    "stays_in": 0,
+	    "talkative": 0
+	},
+	"bio": "I'm a new transplant to SF but really want to meet new people and start to get aquainted with the city. I have a cat so I hope you love them!"
+    }
+]
