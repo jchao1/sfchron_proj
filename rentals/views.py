@@ -20,3 +20,5 @@ def listings_view(request):
 def property_view(request, id):
 	return render(request, 'rentals/templates/rentals/property.html', {'listings': listings, 'listingID': int(id) })
 	
+def profile_view(request):
+	return render(request, 'rentals/templates/rentals/profile.html', {})

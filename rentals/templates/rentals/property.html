@@ -5,19 +5,19 @@
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/listings.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/property.css' %}">
 
 </head>
 <body>
 	<header id="sticky active">
-		<img id="logo" src="{% static 'assets/logo.png' %}">
+		<a href="{% url 'index' %}"><img id="logo" src="{% static 'assets/logo.png' %}"></a>
 		<nav class="menu">
 
 			<ul class="active">
-				<li>MY LISTINGS</li>
-				<li>ROOMMATES</li>
-				<li>OPEN HOUSE</li>
-				<li>MY PROFILE</li>
+				<li><a href="{% url 'listings' %}">MY LISTINGS</a></li>
+				<li><a href="#">ROOMMATES</a></li>
+				<li><a href="#">OPEN HOUSE</a></li>
+				<li><a href="{% url 'profile' %}">MY PROFILE</a></li>
 			</ul>
 
 
@@ -29,18 +29,46 @@
 
 	<div class="container">
 		
-		<section id="top">
+<!-- 		<section id="top">
 			<h1>FEATURED LISTINGS</h1>
 		</section>
-
+ -->
 		{% for listing in listings %}
 		{% if listing.listing_id == listingID %}
-		<div class="listing">
-		  <p>{{ listing.address }}</p>
-		  <p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
+		<div class="row">
+		  <div class="small-8 columns" style="padding: 0">
+		  	<img src="{{listing.image_urls.0}}">
+		  </div>
+
+		  <div class="small-4 columns">
+		  	<h3>{{ listing.address}}</h3>
+		  	<h3>${{ listing.price}}/MONTH</h3>
+		  	<h3>{{ listing.contact.name}}</h3>
+		  </div>
 		</div>
+
+		<div class="row">
+			<h3>DESCRIPTION</h3>
+			<p>Lorem ipsum dolor sit amet, cu suscipit complectitur has. Ne sed invidunt recteque accommodare, hinc dicat vix ad. Eu mel audire definiebas repudiandae, in paulo dicam partiendo nam. Everti propriae apeirian mei no, quo laudem aliquip atomorum ut. Brute putent graeco sed at, mel admodum vulputate ea, te duo patrioque splendide.</p>
+		</div>
+
+		<div class="row">
+			<a style="margin: 0 auto; display: block; width: 160px;" href="{% url 'listings' %}" class="large secondary hollow button">Get Started</a>
+		</div>
+		
+
+		<div class="row">
+			<h3>REVIEWS</h3>
+			<p>Lorem ipsum dolor sit amet, cu suscipit complectitur has. Ne sed invidunt recteque accommodare, hinc dicat vix ad. Eu mel audire definiebas repudiandae, in paulo dicam partiendo nam. Everti propriae apeirian mei no, quo laudem aliquip atomorum ut. Brute putent graeco sed at, mel admodum vulputate ea, te duo patrioque splendide.</p>
+		</div>
+
+
 		{% endif %}
 		{% endfor %}
+
+		<footer>
+			<h3>LEAVE A REVIEW</h3>
+		</footer>
 
 	</div>
 

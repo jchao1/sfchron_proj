@@ -1,20 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
 .listing{
-	height: 300px;
-	width: 100%;
 	background-color: #F1F3EE;
+	border-bottom: 1px solid black;
 	padding: 30px;
+	max-width: none;
 }
 
-.listing .listing-left{
-	height: 100%;
-	display: inline-block;
+.listing p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	margin-bottom: 4px;
 }
 
-.listing .listing-left img{
-	height: 100%;
-}
-
-.listing .listing-right{
-	height: 100%;
-	display: inline-block;
+@media only screen and (max-width: 40em) {
+	.listing{
+		padding: 10px;
+	}
+	.listing p{
+		font-size: 14px;
+	}
 }

@@ -71,7 +71,7 @@ header ul li{
     display:none;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1000px) {
     .menu {
         position:relative;
         display:inline-block;
@@ -137,4 +137,11 @@ header ul li{
         box-shadow:-1px 1px 2px rgba(0,0,0,0.1);
     }
 
+}
+
+a{
+    color: black;
+}
+a:hover{
+   
 }

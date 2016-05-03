@@ -10,14 +10,14 @@
 </head>
 <body>
 	<header id="sticky active">
-		<img id="logo" src="{% static 'assets/logo.png' %}">
+		<a href="{% url 'index' %}"><img id="logo" src="{% static 'assets/logo.png' %}"></a>
 		<nav class="menu">
 
 			<ul class="active">
-				<li>MY LISTINGS</li>
-				<li>ROOMMATES</li>
-				<li>OPEN HOUSE</li>
-				<li>MY PROFILE</li>
+				<li><a href="{% url 'listings' %}">MY LISTINGS</a></li>
+				<li><a href="#">ROOMMATES</a></li>
+				<li><a href="#">OPEN HOUSE</a></li>
+				<li><a href="{% url 'profile' %}">MY PROFILE</a></li>
 			</ul>
 
 
@@ -34,10 +34,20 @@
 		</section>
 
 		{% for listing in listings %}
-		<div class="listing">
-		  <p>{{ listing.address }}</p>
-		  <p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
-		</div>
+		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
+			<div class="listing row">
+				<div class="small-4 columns">
+					<img src="{{ listing.image_urls.0 }}">
+				</div>
+				<div class="small-8 columns">
+					<p>{{ listing.address }} </p>
+					<p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
+					<p>{{ listing.num_beds}} Bedroom/{{ listing.num_baths }} Bath</p>
+					<p>{{ listing.sqft }} square feet</p>
+					<p>${{ listing.price }} / month</p>
+				</div>
+			</div>
+		</a>
 		{% endfor %}
 
 	</div>
