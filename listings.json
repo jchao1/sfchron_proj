@@ -28,7 +28,10 @@
 		"phone": "5555849302",
 		"email": "jspin@sfallc.com",
 		"company": "SanFranApts LLC"
-	}
+	},
+	"open_house_day": "Wednesday",
+	"open_house_start": "7:00 pm",
+	"open_house_end": "9:00 pm"
     },
     {	
 	"listing_id": 2,
@@ -59,7 +62,10 @@
 		"phone": "5559280185",
 		"email": "eric@bigsf.com",
 		"company": "Big SF Co"
-	}
+	},
+	"open_house_day": "Thursday",
+	"open_house_start": "2:00 pm",
+	"open_house_end": "5:00 pm"
     },
     {	
 	"listing_id": 3,
@@ -90,7 +96,10 @@
 		"phone": "5558920483",
 		"email": "larsmith@sfallc.com",
 		"company": "SanFranApts LLC"
-	}
+	},
+	"open_house_day": "Monday",
+	"open_house_start": "11:00 am",
+	"open_house_end": "2:00 pm"
     },
     {	
 	"listing_id": 4,
@@ -121,7 +130,10 @@
 		"phone": "5554679482",
 		"email": "Matt@noehomes.org",
 		"company": "Noe Home No Problem"
-	}
+	},
+	"open_house_day": "Monday",
+	"open_house_start": "1:00 pm",
+	"open_house_end": "2:00 pm"
     },
     {	
 	"listing_id": 5,
@@ -152,7 +164,10 @@
 		"phone": "5554678423",
 		"email": "LeslieGeorgeson@gmail.com",
 		"company": ""
-	}
+	},
+	"open_house_day": "Tuesday",
+	"open_house_start": "3:00 pm",
+	"open_house_end": "6:00 pm"
     },
     {	
 	"listing_id": 6,
@@ -183,7 +198,10 @@
 		"phone": "5559875543",
 		"email": "SalRen@sfallc.com",
 		"company": "SanFranApts LLC"
-	}
+	},
+	"open_house_day": "Wednesday",
+	"open_house_start": "4:00 pm",
+	"open_house_end": "7:00 pm"
     },
     {	
 	"listing_id": 7,
@@ -214,7 +232,10 @@
 		"phone": "5559964319",
 		"email": "Peter@DixonRealEstate.com",
 		"company": "Dixon Real Estate"
-	}
+	},
+	"open_house_day": "Thursday",
+	"open_house_start": "6:00 pm",
+	"open_house_end": "9:00 pm"
     },
     {	
 	"listing_id": 8,
@@ -245,7 +266,10 @@
 		"phone": "5558920483",
 		"email": "larsmith@sfallc.com",
 		"company": "SanFranApts LLC"
-	}
+	},
+	"open_house_day": "Tuesday",
+	"open_house_start": "2:00 pm",
+	"open_house_end": "6:00 pm"
     },
     {	
 	"listing_id": 9,
@@ -276,7 +300,10 @@
 		"phone": "5558920483",
 		"email": "larsmith@sfallc.com",
 		"company": "SanFranApts LLC"
-	}
+	},
+	"open_house_day": "Monday",
+	"open_house_start": "9:00 am",
+	"open_house_end": "12:00 pm"
     },
     {	
 	"listing_id": 10,
@@ -307,6 +334,9 @@
 		"phone": "5553465972",
 		"email": "AshleyBurns2@gmail.com",
 		"company": ""
-	}
+	},
+	"open_house_day": "Wednesday",
+	"open_house_start": "12:30 pm",
+	"open_house_end": "2:00 pm"
     }
 ]
