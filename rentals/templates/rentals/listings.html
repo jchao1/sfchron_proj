@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>https://github.com/jchao1/sfchron_proj/edit/master/rentals/templates/rentals/listings.html#fork-destination-box
 	<title></title>
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}">
@@ -17,6 +17,22 @@
 		<section id="top">
 			<h1>FEATURED LISTINGS</h1>
 		</section>
+
+	<!--
+	Listing filters to implement:
+		Cost
+		Size
+		
+	Other potential filters:
+		Location
+		Number of bedrooms
+		Number of bathrooms
+		Whole room or just bedroom available?
+		Apartment floor number
+		Elevator or stairs?
+		24 hour security?
+		Furnished?
+	-->
 
 		{% for listing in listings %}
 		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
