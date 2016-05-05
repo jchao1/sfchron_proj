@@ -134,12 +134,13 @@
 				<div class="small-4 columns">
 					<img src="{{ listing.image_urls.0 }}">
 				</div>
-				<div class="small-8 columns" style="margin-top: -10px;">
+				<div class="small-8 columns" style="margin-top: -10px; position: relative;">
 					<p>{{ listing.address }} </p>
 					<p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
 					<p>{{ listing.num_beds}} Bedroom/{{ listing.num_baths }} Bath</p>
 					<p>{{ listing.sqft }} square feet</p>
 					<p>${{ listing.price }} / month</p>
+					<i style="right: 0; bottom: 0;" class="fa fa-share fa-2x" aria-hidden="true"></i>
 				</div>
 			</div>
 		</a>
