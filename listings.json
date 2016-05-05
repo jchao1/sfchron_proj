@@ -9,7 +9,7 @@
 	"sqft": 780,
 	"num_beds": 1,
 	"num_baths": 1,
-	"price": 1800,
+	"price": 5900,
 	"type": "apartment",
 	"image_urls": [
 	    "http://d1myakww8w9xev.cloudfront.net/5d505e3482e25795/ZglpbWFnZXMvNTZjMjk4ZDAyZmUzNTQ1ZWU2MDAwMDAxLzU2YzI5OGQzMmZlMzU0NWVlNjAwMDAwNi5qcGVnCnAJdGh1bWIJNjAweDQxNSMKZQlqcGVn.jpeg?pid=53111f4aa78e92300800000a&kid=52af0988a78e92170d001895",
@@ -109,7 +109,7 @@
 	"sqft": 900,
 	"num_beds": 1,
 	"num_baths": 1,
-	"price": 2300,
+	"price": 1800,
 	"type": "apartment",
 	"image_urls": [
 	    "http://modishspace.com/images/stories/amazing_interiors/jeffers-design-group-sky-high-glamour-san-francisco/modern-pop-glamour-apartment-in-san-francisco21.jpg"
