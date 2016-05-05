@@ -19,6 +19,9 @@ def index(request):
 
 def listings_view(request):
 	return render(request, 'rentals/templates/rentals/listings.html', {'listings': listings })
+	
+def listings_view_cost(request, cost):
+	return render(request, 'rentals/templates/rentals/listings.html', {'listings': listings, 'cost': int(cost) })
 
 def roommates_view(request):
 	return render(request, 'rentals/templates/rentals/roommates.html', {'roommates': roommates })

@@ -2,7 +2,7 @@
     {	
 	"user_id": 1,
 	"name": "Eric Matthews",
-	"profile_img_url": "something",
+	"profile_img_url": "https://www.monash.edu/research-profiles-global/directory/s51478/f9439.jpg",
 	"target_price": [1000, 1500],
 	"target_neighborhood": "Presidio",
 	"target_sqft": [800,1800],
@@ -39,7 +39,7 @@
     {	
 	"user_id": 2,
 	"name": "Andy Porter",
-	"profile_img_url": "something",
+	"profile_img_url": "http://www.fsu.edu/_/inc/news/2016-05-04-01/img/brian-menard-360x240.jpg",
 	"target_price": [1000, 2500],
 	"target_neighborhood": "Excelsior",
 	"target_sqft": [3000,3500],
@@ -76,7 +76,7 @@
     {	
 	"user_id": 3,
 	"name": "Catherine Hopper",
-	"profile_img_url": "something",
+	"profile_img_url": "http://www.chappellpartners.ca/wp-content/uploads/2015/04/Kim-Stock-profile-photo.jpg",
 	"target_price": [1300, 2500],
 	"target_neighborhood": "Downtown",
 	"target_sqft": [1500, 2100],
@@ -113,7 +113,7 @@
     {	
 	"user_id": 4,
 	"name": "Anne Salvador",
-	"profile_img_url": "something",
+	"profile_img_url": "https://college.unc.edu/files/2011/12/Caldwell_Kia-3WEBCROP2.jpg",
 	"target_price": [800, 1700],
 	"target_neighborhood": "Inner Mission",
 	"target_sqft": [1300, 2000],
@@ -150,7 +150,7 @@
     {	
 	"user_id": 5,
 	"name": "John Bell",
-	"profile_img_url": "something",
+	"profile_img_url": "http://s.huffpost.com/contributors/garrett-mintz/headshot.jpg",
 	"target_price": [2000, 4000],
 	"target_neighborhood": "Marina",
 	"target_sqft": [2000, 3000],
@@ -187,7 +187,7 @@
     {	
 	"user_id": 6,
 	"name": "Hans Reichert",
-	"profile_img_url": "something",
+	"profile_img_url": "https://tcmain.s3.amazonaws.com/images/scholarship/Sam%20Allen%20Photoresized.jpg",
 	"target_price": [500, 2200],
 	"target_neighborhood": "Bayview",
 	"target_sqft": [2000, 3000],

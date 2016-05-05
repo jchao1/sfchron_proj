@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+	url(r'^listings/(?P<cost>\d+)/$', views.listings_view_cost, name='listingsCost'),
     url(r'^listings/$', views.listings_view, name='listings'),
     url(r'^roommates/$', views.roommates_view, name='roommates'),
 	url(r'^openhouse/$', views.openhouse_view, name='openhouse'),
