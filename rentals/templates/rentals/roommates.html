@@ -84,7 +84,7 @@
 			<a href="{% url 'user' roommate.user_id%}" style="color: black;">
 				<div class="roommate row">
 					<div class="small-4 columns">
-						<img src="http://cdn.journalism.cuny.edu/blogs.dir/87/files/2009/10/Chang_PortraitAssignment_1LH.jpg">
+						<img style="height: 200px; display: block; margin: 0 auto; border: 2px solid black;" src="{{ roommate.profile_img_url }}">
 					</div>
 					<div class="small-8 columns" style="position: relative;">
 						<p>{{ roommate.name }}</p>
