@@ -109,5 +109,116 @@
 	    "talkative": 0
 	},
 	"bio": "I'm a new transplant to SF but really want to meet new people and start to get aquainted with the city. I have a cat so I hope you love them!"
+    },
+    {	
+	"user_id": 4,
+	"name": "Anne Salvador",
+	"profile_img_url": "something",
+	"target_price": [800, 1700],
+	"target_neighborhood": "Inner Mission",
+	"target_sqft": [1300, 2000],
+	"target_num_roommates": 1,
+	"phone": "5557859326",
+	"email": "annesalv8@gmail.com",
+	"preferred_contact": "phone",
+	"behavioral": 
+	{
+	    "smoking": false,
+	    "messy": 4,
+	    "early_to_rise": 3,
+	    "share_personal": 3,
+	    "share_general": 4,
+	    "pets": true,
+	    "alcohol": 1,
+	    "stays_in": 2,
+	    "talkative": 3
+	},
+	"roommate_preference":
+	{
+	    "smoking": false,
+	    "messy": 4,
+	    "early_to_rise": 3,
+	    "share_personal": 3,
+	    "share_general": 3,
+	    "pets": true,
+	    "alcohol": 2,
+	    "stays_in": 0,
+	    "talkative": 3
+	},
+	"bio": "I'm getting a job in SF! I like to hang out with people and get coffee, but I need my quiet time. I love the beach, too!"
+    },
+    {	
+	"user_id": 5,
+	"name": "John Bell",
+	"profile_img_url": "something",
+	"target_price": [2000, 4000],
+	"target_neighborhood": "Marina",
+	"target_sqft": [2000, 3000],
+	"target_num_roommates": 1,
+	"phone": "5557778989",
+	"email": "saved.by.the.bell7@gmail.com",
+	"preferred_contact": "email",
+	"behavioral": 
+	{
+	    "smoking": true,
+	    "messy": 1,
+	    "early_to_rise": 5,
+	    "share_personal": 2,
+	    "share_general": 5,
+	    "pets": false,
+	    "alcohol": 4,
+	    "stays_in": 2,
+	    "talkative": 4
+	},
+	"roommate_preference":
+	{
+	    "smoking": true,
+	    "messy": 0,
+	    "early_to_rise": 5,
+	    "share_personal": 0,
+	    "share_general": 5,
+	    "pets": false,
+	    "alcohol": 5,
+	    "stays_in": 1,
+	    "talkative": 5
+	},
+	"bio": "Hey guys! I'm looking to move out of my house and into an apartment. I'd love to meet up over drinks and introduce myself. Shoot me an email and I'll cover your tab."
+    },
+    {	
+	"user_id": 6,
+	"name": "Hans Reichert",
+	"profile_img_url": "something",
+	"target_price": [500, 2200],
+	"target_neighborhood": "Bayview",
+	"target_sqft": [2000, 3000],
+	"target_num_roommates": 3,
+	"phone": "5559999999",
+	"email": "hans_olo@yahoo.com",
+	"preferred_contact": "phone",
+	"behavioral": 
+	{
+	    "smoking": true,
+	    "messy": 5,
+	    "early_to_rise": 1,
+	    "share_personal": 2,
+	    "share_general": 5,
+	    "pets": false,
+	    "alcohol": 5,
+	    "stays_in": 4,
+	    "talkative": 2
+	},
+	"roommate_preference":
+	{
+	    "smoking": true,
+	    "messy": 5,
+	    "early_to_rise": 1,
+	    "share_personal": 0,
+	    "share_general": 5,
+	    "pets": false,
+	    "alcohol": 0,
+	    "stays_in": 0,
+	    "talkative": 2
+	},
+	"bio": "Halo! I fell in love with SF after visiting last year. I dont have a job lined up but hope to soon! Text me and I'll fill you in on more about who I am!"
     }
 ]
