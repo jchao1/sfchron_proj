@@ -15,6 +15,27 @@
 	background-color: #E6E6E6; 
 }
 
+i{
+	cursor: pointer;
+	position: absolute;
+	right: 25px;
+	top: 75px;
+	padding: 10px 15px;
+	border-radius: 40px;
+	border: 1px solid;
+}
+
+#map{
+	height: 500px;
+	width: 100%;
+	overflow: scroll;
+}
+
+#map img{
+	width: 100%;
+	height: auto;
+}
+
 @media only screen and (max-width: 40em) {
 	.listing{
 		padding: 10px;
@@ -22,4 +43,8 @@
 	.listing p{
 		font-size: 14px;
 	}
+}
+
+.active-map{
+	display: none;
 }

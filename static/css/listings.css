@@ -6,8 +6,8 @@
 }
 
 .listing p{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-size: 32px;
 	margin-bottom: 4px;
 }
 i{
@@ -17,7 +17,7 @@ i{
 
 
 #filter{
-	height: 180px;
+	height: 260px;
 	display: none;
 	width: 100%;
 	border-bottom: none;
@@ -54,6 +54,12 @@ i{
 	border: 1px black solid; 
 	border-radius: 2px; 
 	padding: 5px;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.listing p{
+		font-size: 24px;
+	}
 }
 
 @media only screen and (max-width: 40em) {

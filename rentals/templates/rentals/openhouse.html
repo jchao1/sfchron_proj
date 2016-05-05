@@ -16,7 +16,12 @@
 	<div class="container">
 		
 		<section id="top">
-			<h1>COMING UP...</h1>
+			<h1>OPEN HOUSES COMING UP</h1>
+			<i id="location" class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
+		</section>
+
+		<section id="map" class="active-map">
+			<img src="{% static 'assets/map.png' %}">
 		</section>
 
 		<section class="date">
@@ -134,5 +139,13 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 	<script src="{% static 'scripts/base.js' %}"></script>
+
+	<script type="text/javascript">
+		
+		$('#location').click(function(){
+			$('section#map').toggleClass('active-map');
+			
+		});
+	</script>
 </body>
 </html>

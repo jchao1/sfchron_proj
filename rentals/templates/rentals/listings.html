@@ -18,7 +18,7 @@
 		
 		<section id="top">
 			<h1>FEATURED LISTINGS</h1>
-			<i class="fa fa-filter fa-2x" id="filter-icon" aria-hidden="true" style=""></i>
+			<i class="fa fa-filter fa-2x" id="filter-icon" aria-hidden="true"></i>
 		</section>
 
 
@@ -52,27 +52,29 @@
 					</div>
 				</div>
 				
+				
+
 				<div class="row" style="padding-left: 75px;">
 					<div class="small-6 columns">
 						 <label>
-					        <select style="width: 80%;">
-					          <option value="husker">Husker</option>
-					          <option value="starbuck">Starbuck</option>
-					          <option value="hotdog">Hot Dog</option>
-					          <option value="apollo">Apollo</option>
+					        <select style="width: 70%;">
+					          <option value="husker">1</option>
+					          <option value="starbuck">2</option>
+					          <option value="hotdog">3</option>
+					          <option value="apollo">4</option>
 					        </select>
-					        LOCATION
+					        BEDROOM
 					      </label>
 					</div>
 					<div class="small-6 columns">
 						 <label>
-					        <select style="width: 60%;">
-					          <option value="husker">Husker</option>
-					          <option value="starbuck">Starbuck</option>
-					          <option value="hotdog">Hot Dog</option>
-					          <option value="apollo">Apollo</option>
+					        <select style="width: 70%;">
+					          <option value="husker">1</option>
+					          <option value="starbuck">2</option>
+					          <option value="hotdog">3</option>
+					          <option value="apollo">4</option>
 					        </select>
-					        BUDGET
+					        BATHROOM
 					      </label>
 					</div>
 				</div>
@@ -80,28 +82,41 @@
 				<div class="row" style="padding-left: 75px;">
 					<div class="small-6 columns">
 						 <label>
-					        <select style="width: 80%;">
-					          <option value="husker">Husker</option>
-					          <option value="starbuck">Starbuck</option>
-					          <option value="hotdog">Hot Dog</option>
-					          <option value="apollo">Apollo</option>
+					        <select style="width: 70%;">
+					          <option value="husker">$0 - $400k</option>
+					          <option value="starbuck">$400k - $800k</option>
+					          <option value="hotdog">$800k - $1.2M</option>
+					          <option value="apollo">$1.2M - $1.5M</option>
 					        </select>
-					        LOCATION
+					        COST
 					      </label>
 					</div>
 					<div class="small-6 columns">
 						 <label>
-					        <select style="width: 60%;">
-					          <option value="husker">Husker</option>
-					          <option value="starbuck">Starbuck</option>
-					          <option value="hotdog">Hot Dog</option>
-					          <option value="apollo">Apollo</option>
+					        <select style="width: 70%;">
+					          <option value="husker">0 - 499 sqft</option>
+					          <option value="starbuck">500 - 999 sqft</option>
+					          <option value="hotdog">1000 - 1499 sqft</option>
+					          <option value="apollo">1500 - 1999 sqft</option>
 					        </select>
-					        BUDGET
+					        SIZE
 					      </label>
 					</div>
 				</div>
 				  
+				 <div class="row" style="padding-left: 75px;">
+					<div class="small-12 columns">
+						 <label style="text-align: center;">
+					        <select style="width: 70%;">
+					          <option value="husker">Presidio</option>
+					          <option value="starbuck">Ingleside</option>
+					          <option value="hotdog">Richmond</option>
+					          <option value="apollo">Diamond Heights</option>
+					        </select>
+					        LOCATION
+					      </label>
+					</div>
+				</div>
 
 				  
 			</div>
@@ -119,7 +134,7 @@
 				<div class="small-4 columns">
 					<img src="{{ listing.image_urls.0 }}">
 				</div>
-				<div class="small-8 columns">
+				<div class="small-8 columns" style="margin-top: -10px;">
 					<p>{{ listing.address }} </p>
 					<p>{{ listing.city }} {{ listing.state }} {{ listing.zip }}</p>
 					<p>{{ listing.num_beds}} Bedroom/{{ listing.num_baths }} Bath</p>
@@ -138,7 +153,7 @@
 		$('.fa-filter').click(function(){
 			$('section#filter').toggleClass('filter-active');
 			if($('section#filter').hasClass('filter-active')){
-				$('#search-icon').css('top', '345px');
+				$('#search-icon').css('top', '425px');
 			}
 			else{
 				$('#search-icon').css('top', '165px');

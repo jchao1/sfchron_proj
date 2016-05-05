@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+.row img{
+	height: 300px;
+	border: black 2px solid;
+	margin: 0 auto;
+	display: block;
+}
+
+.container{
+	background-color: #F1F3EE;
+}
+
+.row{
+	margin-top: 30px;
+	padding: 0 100px;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#settings-icon{
+	position: absolute;
+	top: 85px;
+	right: 25px;
+}
+
+@media only screen and (max-width: 40em) {
+	.row{
+		padding: 0 30px;
+	}
+}
+
+.row h3{
+	margin-left: 20px;
+}
+
+.row i {
+	margin-right: 15px;
+}
+
+
+footer{
+	position: relative;
+	background-color: #DEDEDE;
+	border: 1px solid #979797;
+	bottom: 0;
+	text-align: center;
+}

@@ -8,6 +8,7 @@ html{
 	
 }
 
+
 body{
 	height: 100%;
 	padding: 40px 0;
@@ -33,4 +34,27 @@ body .button{
 	padding-left: 50px;
 	padding-right: 50px;
 	border-color: black;
+}
+
+#fb{
+	height: 40px;
+	cursor: pointer;
+}
+
+#login{
+	background-color: rgba(255,255,255, 0.9);
+	border: #E0E0E0 1px solid;
+	border-radius: 3px;
+	margin: 10px auto;
+	padding: 10px;
+	height: auto;
+	width: 600px;
+}
+
+#login input{
+	text-align: center;
+}
+
+.active{
+	display: none;
 }
