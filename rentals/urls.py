@@ -9,4 +9,5 @@ urlpatterns = [
 	url(r'^openhouse/$', views.openhouse_view, name='openhouse'),
 	url(r'^profile/$', views.profile_view, name='profile'),
 	url(r'^property/(?P<id>\d+)/$', views.property_view, name='property'),
+	url(r'^user/(?P<id>\d+)/$', views.user_view, name='user'),
 ]

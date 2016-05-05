@@ -5,6 +5,7 @@
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/openhouse.css' %}">
 
 </head>
@@ -18,11 +19,12 @@
 			<h1>COMING UP...</h1>
 		</section>
 
-		<section id="date">
-			<h3>Wednesday, May 4th</h3>
+		<section class="date">
+			<h3>Monday</h3>
 		</section>
 
 		{% for listing in listings %}
+		{% if listing.open_house_day == 'Monday' %}
 		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
 			<div class="listing row">
 				<div class="small-4 columns">
@@ -36,7 +38,97 @@
 				</div>
 			</div>
 		</a>
+		{% endif %}
 		{% endfor %}
+
+		<section class="date">
+			<h3>Tuesday</h3>
+		</section>
+
+		{% for listing in listings %}
+		{% if listing.open_house_day == 'Tuesday' %}
+		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
+			<div class="listing row">
+				<div class="small-4 columns">
+					<img src="{{ listing.image_urls.0 }}">
+				</div>
+				<div class="small-8 columns">
+					<p>{{ listing.address }} </p>
+	
+					<p>{{ listing.open_house_start }} - {{ listing.open_house_end }}</p>
+					<p>DESCRIPTION</p>
+				</div>
+			</div>
+		</a>
+		{% endif %}
+		{% endfor %}
+
+		<section class="date">
+			<h3>Wednesday</h3>
+		</section>
+
+		{% for listing in listings %}
+		{% if listing.open_house_day == 'Wednesday' %}
+		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
+			<div class="listing row">
+				<div class="small-4 columns">
+					<img src="{{ listing.image_urls.0 }}">
+				</div>
+				<div class="small-8 columns">
+					<p>{{ listing.address }} </p>
+	
+					<p>{{ listing.open_house_start }} - {{ listing.open_house_end }}</p>
+					<p>DESCRIPTION</p>
+				</div>
+			</div>
+		</a>
+		{% endif %}
+		{% endfor %}
+
+		<section class="date">
+			<h3>Thursday</h3>
+		</section>
+
+		{% for listing in listings %}
+		{% if listing.open_house_day == 'Thursday' %}
+		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
+			<div class="listing row">
+				<div class="small-4 columns">
+					<img src="{{ listing.image_urls.0 }}">
+				</div>
+				<div class="small-8 columns">
+					<p>{{ listing.address }} </p>
+	
+					<p>{{ listing.open_house_start }} - {{ listing.open_house_end }}</p>
+					<p>DESCRIPTION</p>
+				</div>
+			</div>
+		</a>
+		{% endif %}
+		{% endfor %}
+
+		<section class="date">
+			<h3>Friday</h3>
+		</section>
+
+		{% for listing in listings %}
+		{% if listing.open_house_day == 'Friday' %}
+		<a href="{% url 'property' listing.listing_id%}" style="color: black;">
+			<div class="listing row">
+				<div class="small-4 columns">
+					<img src="{{ listing.image_urls.0 }}">
+				</div>
+				<div class="small-8 columns">
+					<p>{{ listing.address }} </p>
+	
+					<p>{{ listing.open_house_start }} - {{ listing.open_house_end }}</p>
+					<p>DESCRIPTION</p>
+				</div>
+			</div>
+		</a>
+		{% endif %}
+		{% endfor %}
+
 
 	</div>
 

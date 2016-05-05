@@ -5,6 +5,7 @@
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/property.css' %}">
 
 </head>
@@ -24,10 +25,10 @@
 		  </div>
 
 		  <div class="small-5 columns">
-		  	<h3>{{ listing.address}}</h3>
-		  	<h3>${{ listing.price}}/MONTH</h3>
-		  	<h3>{{ listing.contact.name}}</h3>
-		  	<h3>OPEN HOUSE: {{ listing.open_house_start }} - {{ listing.open_house_end }}</h3>
+		  	<h3><i class="fa fa-location-arrow" aria-hidden="true"></i>{{ listing.address}}</h3>
+		  	<h3><i class="fa fa-usd" aria-hidden="true"></i>${{ listing.price}}/MONTH</h3>
+		  	<h3><i class="fa fa-user" aria-hidden="true"></i>{{ listing.contact.name}}</h3>
+		  	<h3><i class="fa fa-home" aria-hidden="true"></i>{{ listing.open_house_start }} - {{ listing.open_house_end }}</h3>
 		  </div>
 		</div>
 

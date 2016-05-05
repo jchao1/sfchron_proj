@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/user.css' %}">
+
+</head>
+<body>
+	{% include "rentals/templates/rentals/nav.html" %}
+asdf
+
+	<div class="container">
+		
+		{% for roommate in roommates %}
+		{% if roommate.user_id == userID %}
+
+		<section id="top">
+			<h1>{{ roommate.name }}'s PROFILE</h1>
+		</section>
+
+		<div class="row">
+		  <div class="small-7 columns" style="padding: 0">
+		  	<img src="http://cdn.journalism.cuny.edu/blogs.dir/87/files/2009/10/Chang_PortraitAssignment_1LH.jpg">
+		  </div>
+
+		  <div class="small-5 columns">
+		  	<h3><i class="fa fa-user" aria-hidden="true"></i>{{ roommate.name }}</h3>
+		  	<h3><i class="fa fa-home" aria-hidden="true"></i>{{ roommate.target_neighborhood }}  /  {{ roommate.target_sqft.0}} - {{ roommate.target_sqft.1 }} sqft</h3>
+		  	<h3> <i class="fa fa-phone" aria-hidden="true"></i>{{ roommate.phone }}</h3>
+		  	<h3><i class="fa fa-envelope" aria-hidden="true"></i>{{ roommate.email }}</h3>
+		  	
+		  </div>
+		</div>
+
+		<div class="row">
+			<h3>DESCRIPTION</h3>
+			<p>{{ roommate.bio }}}</p>
+		</div>
+
+		<footer>
+			<h3>MESSAGE {{ roommate.name}}!</h3>
+		</footer>
+		
+		{% endif %}
+		{% endfor %}
+
+		
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script src="{% static 'scripts/base.js' %}"></script>
+</body>
+</html>

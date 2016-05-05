@@ -5,6 +5,7 @@
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/roommates.css' %}">
 
 </head>
@@ -24,16 +25,92 @@
 	<div class="container">
 		
 		<section id="top">
-			<h1>ROOMMATES</h1>
+			<h1>POTENTIAL ROOMMATES</h1>
+			<i class="fa fa-filter fa-2x" id="filter-icon" aria-hidden="true" style=""></i>
+			
 		</section>
 
-		{% for listing in listings %}
-		
+		<section id="filter">
+			<div id="container1">
+				<div class="row" style="text-align: center;">
+					<div class="small-4 columns">
+						 <input type="checkbox"><label for="checkbox1">PETS</label>
+					</div>
+					<div class="small-4 columns">
+						<input type="checkbox"><label for="checkbox1">SMOKING</label>
+					</div>
+					<div class="small-4 columns">
+						 <input type="checkbox"><label for="checkbox1">SHARED ROOM</label>
+					</div>
+				</div>
+				
+				<div class="row" style="padding-left: 75px;">
+					<div class="small-6 columns">
+						 <label>
+					        <select style="width: 80%;">
+					          <option value="husker">Husker</option>
+					          <option value="starbuck">Starbuck</option>
+					          <option value="hotdog">Hot Dog</option>
+					          <option value="apollo">Apollo</option>
+					        </select>
+					        LOCATION
+					      </label>
+					</div>
+					<div class="small-6 columns">
+						 <label>
+					        <select style="width: 60%;">
+					          <option value="husker">Husker</option>
+					          <option value="starbuck">Starbuck</option>
+					          <option value="hotdog">Hot Dog</option>
+					          <option value="apollo">Apollo</option>
+					        </select>
+					        BUDGET
+					      </label>
+					</div>
+				</div>
+				  
+
+				  
+			</div>
+			
+		</section>
+
+		<section id="search">
+			<input style="height: 100%; font-size: 36px;" type="text"></input>
+			<i id="search-icon" class="fa fa-search fa-2x" aria-hidden="true"></i>
+		</section>
+
+		{% for roommate in roommates %}
+			<a href="{% url 'user' roommate.user_id%}" style="color: black;">
+				<div class="roommate row">
+					<div class="small-4 columns">
+						<img src="http://cdn.journalism.cuny.edu/blogs.dir/87/files/2009/10/Chang_PortraitAssignment_1LH.jpg">
+					</div>
+					<div class="small-8 columns">
+						<p>{{ roommate.name }}</p>
+						<p>${{ roommate.target_price.0}} - ${{ roommate.target_price.1}}</p>
+						<p>Looking in {{ roommate.target_neighborhood}}</p>
+					</div>
+				</div>
+			</a>
 		{% endfor %}
 
 	</div>
 
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 	<script src="{% static 'scripts/base.js' %}"></script>
+	<script type="text/javascript">
+		$('.fa-filter').click(function(){
+			$('section#filter').toggleClass('filter-active');
+			if($('section#filter').hasClass('filter-active')){
+				$('#search-icon').css('top', '345px');
+			}
+			else{
+				$('#search-icon').css('top', '165px');
+			}
+		});
+
+		//165, 245
+	</script>
 </body>
 </html>
